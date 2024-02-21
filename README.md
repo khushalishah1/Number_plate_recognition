@@ -4,4 +4,5 @@ Here, we pass the video file first. Next, we define a line. If the car's centre 
 
 First Install all the requirements from requirements.txt. Also download coco.txt and model.pt file from the repo.
 
-Then for running the whole process run below command. !python main.py
+Then for running the whole process run below command. 
+!python main.py
