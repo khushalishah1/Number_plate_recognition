@@ -29,11 +29,11 @@ async def detect_license_plates(image_path):
                     # Extract the detected license plate region
                     cropped_plate = img[y1:y2, x1:x2]
                     cv2.imwrite('test.jpg', cropped_plate)
-                    filename = os.path.basename('/home/khushali/Desktop/tracking/test.jpg')
+                    filename = os.path.basename('test.jpg')
                     data = aiohttp.FormData()
                     data.add_field(
                         name="upload",
-                        value=open('/home/khushali/Desktop/tracking/test.jpg', "rb"),
+                        value=open('test.jpg', "rb"),
                         filename=filename,
                         content_type='image/jpeg',
                     )
